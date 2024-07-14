@@ -1,0 +1,16 @@
+@use "sass:color";
+
+$white: #eee;
+$black: #111;
+
+$red: color.adjust(hsl(0, 100%, 50%), $hue: +8);
+$pink: color.adjust(hsl(330, 100%, 50%), $hue: -5);
+$purple:  color.adjust(hsl(270, 100%, 50%), $hue: +3);
+$blue: color.adjust(hsl(210, 100%, 50%), $hue: -8);
+$turquoise: color.adjust(hsl(150, 100%, 50%), $hue: +8);
+$green: color.adjust(hsl(120, 100%, 50%), $hue: -8);
+$yellow: color.adjust(hsl(60, 100%, 50%), $hue: -5);
+$orange: color.adjust(hsl(30, 100%, 50%), $hue: +8);
+$brown: color.change($orange, $saturation: 85%, $lightness: 25%);
+
+$gold: #d4af37;

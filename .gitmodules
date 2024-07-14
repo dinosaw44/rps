@@ -1,0 +1,3 @@
+[submodule "src/lib/common"]
+	path = src/lib/common
+	url = git@github.com:dinosaw44/common.git

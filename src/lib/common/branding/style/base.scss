@@ -1,0 +1,52 @@
+@use 'font';
+@use 'theme';
+
+@each $level in 1 2 3 4 5 6 {
+    h#{$level} {
+        @extend %headings !optional;
+    }
+}
+
+ul, ol {
+    @extend %lists !optional;
+}
+
+%headings {
+    font-weight: font.$fine;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: font.$medium;
+}
+
+h4, h5, h6 {
+    font-size: 1rem;
+    font-weight: font.$medium;
+}
+
+%lists {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body, p, %headings, %lists {
+    margin: 0;
+}
+
+button, input, p, %lists {
+    font-size: 1rem;
+}

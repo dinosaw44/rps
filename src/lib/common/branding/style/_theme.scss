@@ -1,0 +1,16 @@
+@use 'font';
+@use 'palette';
+
+:root {
+    --color-light: #{palette.$white};
+    --color-dark: #{palette.$black};
+    --color-accent: #{palette.$yellow};
+    --color-warn: #{palette.$red};
+
+    font: font.$text;
+}
+
+body {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
