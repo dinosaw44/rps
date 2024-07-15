@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "type": "module",
+    "config": {
+        "port": 9000
+    },
+    "scripts": {
+        "start": "npx tsx ./index.ts",
+        "dev": "NODE_ENV=development npm start"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "nanoid": "^5.0.7",
+        "nanoid-dictionary": "^4.3.0",
+        "npm": "^10.8.2",
+        "peer": "^1.0.2",
+        "random-seedable": "^1.0.8"
+    },
+    "devDependencies": {
+        "@types/nanoid-dictionary": "^4.2.3"
+    }
+}
